@@ -1,11 +1,11 @@
 import flask
 
-def http_response(self, status_code, data, message='Success', type='success'):
+def http_response(status_code, data, message='Success', type='success'):
     response = {}
     response = flask.jsonify({
             'notification': {
             'hint':'Reponse Sent', 
-            'message':message, 
+            'message':message,
             'aahho_code':'SE-'+str(status_code), 
             'type':type
             }, 

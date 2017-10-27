@@ -2,4 +2,4 @@
 *.pyc
 migrations
 env.py
-
+*.json

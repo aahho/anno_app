@@ -1,9 +1,9 @@
-from aws_s3.urls import aws_s3
+from g_firebase.urls import firebase
 
 ## 
 # Register all url blueprints
 # @param blueprint_instance as app
 ##
 def register_urls(app):
-	## Blueprint for aws_s3
-	app.register_blueprint(aws_s3)
+	## Blueprint for firebase
+	app.register_blueprint(firebase)
