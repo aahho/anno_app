@@ -25,4 +25,4 @@ class RequestHandler():
 	def handle_notifying_users(self, request):
 		data = user_notify_format(request.json)
 		result = self.firebase.notify_users(data)
-		print result
+		return result
